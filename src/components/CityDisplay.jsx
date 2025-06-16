@@ -9,7 +9,7 @@ const CityDisplay = () => {
   useEffect(() => {
     const fetchCities = async () => {
       try {
-        const response = await axios.get("http://localhost:5174/api/city/all-cities");
+        const response = await axios.get("https://nepalbackend.onrender.com/api/city/all-cities");
         setCities(response.data);
       } catch (error) {
         console.error("Error fetching cities:", error);

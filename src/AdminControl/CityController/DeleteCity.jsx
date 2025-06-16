@@ -13,7 +13,7 @@ const DeleteCity = () => {
     useEffect(() => {
         const fetchCities = async () => {
             try {
-                const res = await axios.get('http://localhost:5174/api/city/all-cities');
+                const res = await axios.get('https://nepalbackend.onrender.com/api/city/all-cities');
                 setCities(res.data || []);
             } catch (err) {
                 console.error(err);

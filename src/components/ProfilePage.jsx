@@ -14,7 +14,7 @@ const ProfilePage = () => {
     const fetchUser = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`http://localhost:5174/api/user/${id}`);
+        const res = await axios.get(`https://nepalbackend.onrender.com/api/user/${id}`);
         setUser(res.data.user);
       } catch (err) {
         setError(err.message || "Something went wrong");

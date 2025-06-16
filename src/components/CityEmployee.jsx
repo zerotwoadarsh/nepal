@@ -12,7 +12,7 @@ export default function CityEmployees() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5174/api/user/all-users');
+        const response = await axios.get('https://nepalbackend.onrender.com/api/user/all-users');
         setUsers(response.data.users);
         setLoading(false);
       } catch (err) {

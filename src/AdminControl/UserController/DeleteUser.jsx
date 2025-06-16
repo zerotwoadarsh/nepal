@@ -13,7 +13,7 @@ const DeleteUser = () => {
     try {
       const token = localStorage.getItem("token");
 
-      await axios.delete(`http://localhost:5174/api/user/delete-user/${data.userId}`, {
+      await axios.delete(`https://nepalbackend.onrender.com/api/user/delete-user/${data.userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

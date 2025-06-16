@@ -30,7 +30,7 @@ const AddUser = () => {
         image6: data.image6,
       };
       
-      const response = await axios.post("http://localhost:5174/api/user/add-user", payload, {
+      const response = await axios.post("https://nepalbackend.onrender.com/api/user/add-user", payload, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",

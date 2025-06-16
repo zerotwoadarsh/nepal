@@ -27,7 +27,7 @@ export default function ProfileList() {
 
     const fetchUser = async () => {
       try {
-        const response = await fetch(`http://localhost:5174/api/user/all-users`);
+        const response = await fetch(`https://nepalbackend.onrender.com/api/user/all-users`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

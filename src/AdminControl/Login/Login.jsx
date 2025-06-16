@@ -13,7 +13,7 @@ const Login = () => {
 
     async function onSubmit(data) {
         try {
-            const response = await axios.post("http://localhost:5174/api/auth/login", data);
+            const response = await axios.post("https://nepalbackend.onrender.com/api/auth/login", data);
             localStorage.setItem("token", response.data.token);
             navigate('/admin/dashboard')
             alert("Login successful!");

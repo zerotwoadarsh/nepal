@@ -13,7 +13,7 @@ const AddCity = () => {
         try {
             const token = localStorage.getItem("token");
             const response = await axios.post(
-                "http://localhost:5174/api/city/add-city",
+                "https://nepalbackend.onrender.com/api/city/add-city",
                  data,
                  {
                     headers: {
